@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Song" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8k3-FV-Bi9">
+                                <rect key="frame" x="16" y="67" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XOw-mr-pFC"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Artist" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sF2-Ap-OW4">
+                                <rect key="frame" x="16" y="105" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Mea-29-ewA"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Album" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jAQ-OT-6mC">
+                                <rect key="frame" x="16" y="143" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LNo-fv-eua"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFA-wE-xc1">
+                                <rect key="frame" x="163.5" y="181" width="48" height="30"/>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="searchAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UuS-6D-qGb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spotify URL:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WoR-h4-1wB">
+                                <rect key="frame" x="16" y="224" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="2WT-AJ-L5m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3MJ-gy-yft">
+                                <rect key="frame" x="16" y="253" width="343" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="MYH-gd-bbM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QpD-5g-574">
+                                <rect key="frame" x="142.5" y="296" width="90" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="DTJ-Da-Ie5"/>
+                                    <constraint firstAttribute="height" constant="30" id="ttH-Fv-IpH"/>
+                                </constraints>
+                                <state key="normal" title="Open Spotify"/>
+                                <connections>
+                                    <action selector="openSpotifyAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OQn-k0-ELY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQO-Xm-OKB">
+                                <rect key="frame" x="169.5" y="334" width="36" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="kdX-al-h9L"/>
+                                </constraints>
+                                <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="clearAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rpq-Oo-Xes"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8k3-FV-Bi9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="47" id="32F-1z-frR"/>
+                            <constraint firstItem="sF2-Ap-OW4" firstAttribute="top" secondItem="8k3-FV-Bi9" secondAttribute="bottom" constant="8" id="7wJ-wk-20O"/>
+                            <constraint firstItem="jAQ-OT-6mC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="B92-43-dcG"/>
+                            <constraint firstItem="GFA-wE-xc1" firstAttribute="top" secondItem="jAQ-OT-6mC" secondAttribute="bottom" constant="8" id="CjS-Co-By4"/>
+                            <constraint firstItem="QpD-5g-574" firstAttribute="top" secondItem="3MJ-gy-yft" secondAttribute="bottom" constant="8" id="E9n-2D-Bld"/>
+                            <constraint firstItem="WoR-h4-1wB" firstAttribute="top" secondItem="jAQ-OT-6mC" secondAttribute="bottom" constant="51" id="Ewu-Xm-Hh8"/>
+                            <constraint firstItem="WoR-h4-1wB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="GhB-Ar-iXY"/>
+                            <constraint firstItem="3MJ-gy-yft" firstAttribute="top" secondItem="WoR-h4-1wB" secondAttribute="bottom" constant="8" id="NIQ-V9-rLa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8k3-FV-Bi9" secondAttribute="trailing" constant="16" id="QPe-OB-3gl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sF2-Ap-OW4" secondAttribute="trailing" constant="16" id="T82-oM-Y1c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3MJ-gy-yft" secondAttribute="trailing" constant="16" id="YCj-ow-MNa"/>
+                            <constraint firstItem="sF2-Ap-OW4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="YYQ-a8-8Hg"/>
+                            <constraint firstItem="jAQ-OT-6mC" firstAttribute="top" secondItem="sF2-Ap-OW4" secondAttribute="bottom" constant="8" id="ePA-7y-Vuo"/>
+                            <constraint firstItem="BQO-Xm-OKB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gXU-Wz-ET2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WoR-h4-1wB" secondAttribute="trailing" constant="16" id="hYl-SG-jcf"/>
+                            <constraint firstItem="3MJ-gy-yft" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="koD-M1-rFg"/>
+                            <constraint firstItem="QpD-5g-574" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m6n-YA-OVf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jAQ-OT-6mC" secondAttribute="trailing" constant="16" id="mNb-Mj-fhP"/>
+                            <constraint firstItem="BQO-Xm-OKB" firstAttribute="top" secondItem="QpD-5g-574" secondAttribute="bottom" constant="8" id="nEs-0N-xrc"/>
+                            <constraint firstItem="8k3-FV-Bi9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="t4l-Np-482"/>
+                            <constraint firstItem="GFA-wE-xc1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yS6-HJ-iiN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="albumTextField" destination="jAQ-OT-6mC" id="xvB-jW-Jwd"/>
+                        <outlet property="artistTextField" destination="sF2-Ap-OW4" id="S4R-vL-Msz"/>
+                        <outlet property="clearButton" destination="BQO-Xm-OKB" id="Q73-nZ-k02"/>
+                        <outlet property="openSpotifyButton" destination="QpD-5g-574" id="01W-oH-wit"/>
+                        <outlet property="searchButton" destination="GFA-wE-xc1" id="whd-7t-h2e"/>
+                        <outlet property="songTextField" destination="8k3-FV-Bi9" id="eWa-lF-lUx"/>
+                        <outlet property="spotifyUrlLabel" destination="3MJ-gy-yft" id="7bz-xs-ENC"/>
+                        <outlet property="spotifyUrlTitleLabel" destination="WoR-h4-1wB" id="wbA-cL-6Xq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
